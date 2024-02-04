@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/daysRcidatetime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="#9F9071"
+        android:text="Sun Aug 21 11;54 AM, 2022"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/daysRcitemp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="2dp"
+        android:layout_marginTop="32dp"
+        android:gravity="start"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/daysRciIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysRcidatetime" />
+
+    <ImageView
+        android:id="@+id/daysRciIcon"
+        android:layout_width="120dp"
+        android:layout_height="110dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/daysRciDesc"
+        app:layout_constraintTop_toBottomOf="@+id/daysRcidatetime"
+        app:srcCompat="@drawable/partly_cloudy_day" />
+
+    <TextView
+        android:id="@+id/daysRciDesc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="Feels Like"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        app:layout_constraintEnd_toStartOf="@+id/daysRciIcon"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysRcitemp" />
+
+    <TextView
+        android:id="@+id/pop"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="(Pop)"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciDesc" />
+    <TextView
+        android:id="@+id/daysRciUv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="UV Index:"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop" />
+
+
+    <TextView
+        android:id="@+id/daysRciMorningTemp"
+        android:layout_width="61dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="28dp"
+
+        android:layout_marginTop="15dp"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciUv" />
+
+    <TextView
+        android:id="@+id/morning"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:text="Morning"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciMorningTemp" />
+
+    <TextView
+        android:id="@+id/daysRciAfternoonTemp"
+        android:layout_width="65dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="36dp"
+
+        android:layout_marginTop="15dp"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/daysRciMorningTemp"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciUv" />
+
+    <TextView
+        android:id="@+id/afternoon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:text="Afternoon"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/morning"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciAfternoonTemp" />
+
+    <TextView
+        android:id="@+id/daysRciEveningTemp"
+        android:layout_width="65dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="52dp"
+
+        android:layout_marginTop="15dp"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/daysRciAfternoonTemp"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciUv" />
+
+    <TextView
+        android:id="@+id/evening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:text="Evening"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/afternoon"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciEveningTemp" />
+
+    <TextView
+        android:id="@+id/daysRciNightTemp"
+        android:layout_width="65dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="16dp"
+
+        android:layout_marginTop="15dp"
+        android:text="12"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@id/daysRciEveningTemp"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciUv" />
+
+    <TextView
+        android:id="@+id/night"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:gravity="center"
+        android:text="Night"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@id/evening"
+        app:layout_constraintTop_toBottomOf="@+id/daysRciNightTemp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
